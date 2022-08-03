@@ -1,0 +1,20 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 157px);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin: 3rem 2rem 6rem;
+
+    @media all and (max-width: 900px) {
+        margin-top: 0rem;
+    }
+
+
+}
+
+.noresults {
+    @include centerElement();
+    @include centerContent();
+    flex-direction: column;
+    font-size: 1.3rem;
+}

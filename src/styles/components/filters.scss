@@ -1,0 +1,11 @@
+.filters {
+  @include rowCenterContent();
+  gap: 4rem;
+
+  @media all and (max-width: 900px) {
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

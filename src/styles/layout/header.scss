@@ -1,0 +1,21 @@
+.header {
+  @include rowCenterContent();
+  border-bottom: $color1 solid 0.15rem;
+  gap: 1rem;
+  background-color: $color2;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  
+  &__title {
+    font-size: 1.7rem;
+    height: 2rem;
+  }
+
+  &__pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+  }
+}

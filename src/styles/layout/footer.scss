@@ -1,0 +1,9 @@
+.footer {
+  @include centerContent();
+  height: 3rem;
+  border-top: $color1 solid 0.15rem;
+  background-color: $color2;
+  &__text {
+    text-transform: uppercase;
+  }
+}

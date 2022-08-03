@@ -1,0 +1,40 @@
+.card {
+  @include column();
+  justify-content: space-between;
+  margin: 0;
+  width: 10rem;
+  height: 22rem;
+  border-radius: 1rem;
+  background-color: $color1;
+  border: 0.14rem solid $color2;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__poster {
+    width: 10rem;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    padding: 0rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  &__description {
+    display: block;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+
+.line {
+  font-style: italic;
+}

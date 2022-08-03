@@ -1,0 +1,11 @@
+@import '../components/movieSceneList.scss';
+@import '../components/movieSceneItem.scss';
+@import '../components/movieSceneDetail.scss';
+@import '../components/filters.scss';
+@import '../components/filterMovie.scss';
+@import '../components/filterYear.scss';
+
+.container {
+  min-height: 100vh;
+  margin-bottom: -3rem;
+}

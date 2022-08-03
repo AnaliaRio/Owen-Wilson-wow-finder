@@ -1,0 +1,63 @@
+@mixin row() {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin centerContent() {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rowCenterContent() {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerElement() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin filter() {
+  margin-top: 3rem;
+  @include row();
+  gap: 1rem;
+  align-items: center;
+
+  &__label {
+    font-size: 1.4rem;
+
+    @media all and (max-width: 900px) {
+      font-size: 1rem;
+      margin-top: 0rem;
+      gap: 0rem;
+    }
+  }
+
+  &__input {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-color: $color2;
+    border: solid $color1 0.15rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+
+    &:focus {
+      background-color: $color3;
+    }
+
+    @media all and (max-width: 900px) {
+      font-size: 1rem;
+    }
+  }
+}
